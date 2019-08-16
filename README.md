@@ -1,8 +1,8 @@
 # Bashrc-functions
 Ten useful functions to add to bashrc. Most of them are not complex at all, simply they are a useful (and understandable thus personalizable) shortcut for tasks which I happen to use quite often and would require either longer or multiple commands.
 
-### Functions:
-#### 1 Print the number of files in a certain directory (or in the current one if no arguments are given)
+## Functions:
+### 1 Print the number of files in a certain directory (or in the current one if no arguments are given)
 **Description:** Count the number of (visible) file in current or target directory
 
 **Usage example:** 
@@ -21,14 +21,17 @@ function numfiles() {
         fi
     }
 ```
-#### 2 Create and change directory
+### 2 Create and change directory
 **Description**: create a new directory with the given name and get into it
 
 **Usage example:**
 ```
+echo $PWD
+> /home/andrea
 mkdcd newfolder
+echo $PWD
+> /home/andrea/newfolder
 ```
-
 **Shell function:**
 ```
 function mkdcd () {
@@ -36,7 +39,7 @@ function mkdcd () {
      }
 ```
 
-#### 3 Autosave 
+### 3 Autosave 
 **Description**: Save the current directory or a specified one in a predefined separated place. I find it useful when I want to try to change or tweak something in a project without having to use version control tools
 
 **Usage example:**
@@ -67,7 +70,7 @@ function autosave() {
     } 
 ```
 
-#### 4 Add suffix to file/folder
+### 4 Add suffix to file/folder
 **Description**: Usually a program I run produces file/folders as result. Running it multiple time would overwrite the existing results, which sometimes I want to keep. Adding a suffix (in this case "_old") solves the problem quite conveniently without further bothers or confusions.
 
 **Usage example:** 
@@ -78,7 +81,6 @@ old Pictures
 ls
 > Pictures_old
 ```
-
 **Shell function:**
 ```
 function old () {
