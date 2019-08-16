@@ -7,12 +7,12 @@ Ten useful functions to add to bashrc. Most of them are not complex at all, simp
 
 **Usage example:** 
 ```
-numfiles Pictures
+countfiles Pictures
 > 2 files in Pictures
 ```
 **Shell function:**
 ```
-function numfiles() { 
+function countfiles() { 
     N="$(ls $1 | wc -l)"; 
     if [[ "$1" == " " || -z "$1" ]]; then 
             echo "$N files in the current directory";
