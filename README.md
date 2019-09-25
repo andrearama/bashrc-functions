@@ -1,5 +1,7 @@
 # Bashrc-functions
-Ten useful functions to add to bashrc. Most of them are not complex at all, simply they are a useful (and understandable thus personalizable) shortcut for tasks which I happen to use quite often and would require either longer or multiple commands.
+Ten useful functions to add to bashrc. 
+Most of them are not complex at all, simply they are useful (and understandable, thus personalizable) shortcuts for tasks which I happen to use quite often and would require either longer or multiple commands.
+It is always a work-in-progress, feel free to ping me if you have further suggestions :)
 
 ## Functions:
 ### 1 Print the number of files in a certain directory (or in the current one if no arguments are given)
